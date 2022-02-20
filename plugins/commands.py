@@ -10,7 +10,7 @@ from telegraph import upload_file
 async def start(client, message):
     await client.send_message(
         chat_id=message.chat.id,
-        text=f"Hello {message.from_user.first_name},\n<b>I ᴀᴍ 𝙇𝙂𝙘𝙔・𝘽𝙊𝙏 \n</b>ʙᴏᴛ ʜᴀɴᴅʟᴇ ʙʏ [𝙇𝙂𝙘𝙔・𝘼𝙇𝙀𝙓](https://t.me/lgcyalex) \n<b>Do /help For More</b>",
+        text=f"Hello {message.from_user.first_name},\n<b>I ᴀᴍ 𝙇𝙂𝙘𝙔・𝘽𝙊𝙏 \n</b>ʙᴏᴛ ʜᴀɴᴅʟᴇʜᴀɴᴅʟᴇ ʙʏ [𝙇𝙂𝙘𝙔・𝘼𝙇𝙀𝙓](https://t.me/lgcyalex) \n<b>Do /help For More</b>",
         reply_to_message_id=message.message_id
     )
 
@@ -18,7 +18,7 @@ async def start(client, message):
 async def help(client, message):
     await client.send_message(
         chat_id=message.chat.id,
-        text=f"<b>Send Me Any Video Or Photo I'll Upload It Into Telegra.ph.</b> \n<b>Created By @LGcYALEX</b>",
+        text=f"<b>𝙎𝙚𝙣𝙙 𝙈𝙚 𝘼𝙣𝙮 𝙑𝙞𝙙𝙚𝙤 𝙊𝙧 𝙋𝙝𝙤𝙩𝙤 𝙄 𝙬𝙞𝙡𝙡 𝙐𝙥𝙡𝙤𝙖𝙙 𝙄𝙩 𝙄𝙣𝙩𝙤 Telegra.ph.</b> \n<b>Created By @LGcYALEX</b>",
         reply_to_message_id=message.message_id
     )
     
@@ -29,7 +29,7 @@ async def getimage(client, message):
         os.makedirs(location)
     imgdir = location + "/" + str(message.chat.id) + "/" + str(message.message_id) +".jpg"
     dwn = await client.send_message(
-          text="<b>Downloading...</b>",
+          text="<b>𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙞𝙣𝙜...</b>",
           chat_id = message.chat.id,
           reply_to_message_id=message.message_id
           )          
@@ -37,11 +37,11 @@ async def getimage(client, message):
             message=message,
             file_name=imgdir
         )
-    await dwn.edit_text("<b>Uploading...</b>")
+    await dwn.edit_text("<b>𝙐𝙥𝙡𝙤𝙖𝙙𝙞𝙣𝙜...</b>")
     try:
         response = upload_file(imgdir)
     except Exception as error:
-        await dwn.edit_text(f"Oops Something Went Wrong\n{error} Contact @Rex_Bots_Support")
+        await dwn.edit_text(f"Oops Something Went Wrong\n{error} Contact @LGcYALEX")
         return
     await dwn.edit_text(f"https://telegra.ph{response[0]}")
     try:
