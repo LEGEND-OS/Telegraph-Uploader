@@ -18,7 +18,7 @@ async def start(client, message):
 async def help(client, message):
     await client.send_message(
         chat_id=message.chat.id,
-        text=f"<b>Send Me Any Video Or Photo I'll Upload It Into Telegra.ph.</b> \n<b>Created By @REX_BOTZ</b>",
+        text=f"<b>Send Me Any Video Or Photo I'll Upload It Into Telegra.ph.</b> \n<b>Created By @LGcYALEX</b>",
         reply_to_message_id=message.message_id
     )
     
@@ -68,7 +68,7 @@ async def getvideo(client, message):
     try:
         response = upload_file(viddir)
     except Exception as error:
-        await dwn.edit_text(f"Oops Something Went Wrong\n{error} Contact @Rex_Bots_Support")
+        await dwn.edit_text(f"Oops Something Went Wrong\n{error} Contact @LGcyALEX")
         return
     await dwn.edit_text(f"https://telegra.ph{response[0]}")
     try:
