@@ -1,8 +1,8 @@
 {
   "name": "Image upload bot",
   "description": "A bot to upload telegram images to telegraph",
-  "repository": "https://github.com/REX-BOTZ/REX-TELEGRAPH-UPLOADER",
-  "logo": "https://telegra.ph/file/c902c5444d2a51612ba4a.jpg",
+  "repository": "https://github.com/lgcyalex/Telegraph-Uploader",
+  "logo": "https://telegra.ph/file/d4f0e2f3ae6c0cdf70518.jpg",
   "keywords": ["telegram", "telegraph", "imageuploader","telegram bot"],
   "env": {
      "BOT_TOKEN": {
