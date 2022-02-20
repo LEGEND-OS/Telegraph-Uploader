@@ -12,7 +12,7 @@ Telegraph  File Photo and many more Uploader.....
 
 ### Deploy to Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/lgcyalex/STRING-GENERATE)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/lgcyalex/Telegraph-Uploader)
 
 
 # Demo 
